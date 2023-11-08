@@ -1,3 +1,4 @@
+
 <template>
   <div class="bg-cyan-400">Demo Page</div>
 </template>
