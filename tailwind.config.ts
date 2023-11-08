@@ -2,8 +2,12 @@ import type { Config } from 'tailwindcss'
 
 export default  <Partial<Config>>{
   content: [
-    'docs/content/**/*.md',
-    './pages/**/*.{vue,js,ts,jsx,tsx}'
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
   ],
   theme: {
     screens: {
