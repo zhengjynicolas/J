@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev & node open.js http:localhost:8080",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -12,19 +12,24 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "nuxt": "^3.8.1",
     "nuxt-lodash": "^2.5.3",
+    "open-browsers": "^1.3.0",
     "prettier": "^3.0.3",
     "stylelint": "^15.11.0",
     "vue": "^3.3.8",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "open": "^9.1.0"
   },
   "dependencies": {
     "@nuxt/ui": "^2.10.0",
-    "@pinia/nuxt": "^0.5.1"
+    "@nuxtjs/svg-sprite": "^1.0.2",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/nuxt": "^10.5.0"
   }
 }
