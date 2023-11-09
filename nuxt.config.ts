@@ -2,11 +2,36 @@
 
 export default defineNuxtConfig({
     devServer: {
-        port: 8080
+        port: 3000
     },
     devtools: {
         enabled: process.env.NODE_ENV !== 'production'
     },
+    eslint: {
+        lintOnStart: false
+    },
+    googleFonts: {
+        families: {
+            Roboto: true,
+            Inter: [400, 700],
+            'Josefin+Sans': true
+        },
+
+        display: 'swap' // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
+    },
+    lodash: {
+        prefix: "_",
+        prefixSkip: ["string"],
+        upperAfterPrefix: false,
+        exclude: ["map"]
+    },
+    // postcss: {
+    //     plugins: {
+    //         tailwindcss: {},
+    //         autoprefixer: {},
+    //     },
+    // },
+    extends: ['@nuxt/ui-pro'],
     modules: [
         '@nuxtjs/stylelint-module',
         '@nuxtjs/eslint-module',
@@ -17,35 +42,8 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@pinia/nuxt'
     ],
-    stylelint:{
+    stylelint: {
         lintOnStart: false
-    },
-    eslint: {
-        lintOnStart: false
-    },
-    // postcss: {
-    //     plugins: {
-    //         tailwindcss: {},
-    //         autoprefixer: {},
-    //     },
-    // },
-    lodash: {
-        prefix: "_",
-        prefixSkip: ["string"],
-        upperAfterPrefix: false,
-        exclude: ["map"]
-    },
-    googleFonts:{
-        families: {
-            Roboto: true,
-            Inter: [400, 700],
-            'Josefin+Sans': true
-        },
-
-        display: 'swap' // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
-    },
-    storybook: {
-        port: 6006,
     },
     // app: {
     //     head: {

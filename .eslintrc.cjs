@@ -11,20 +11,20 @@ module.exports = {
     extends: [
         "prettier",
         "eslint:recommended",
-        // "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended"
     ],
-    // parser: "@typescript-eslint/parser",
+    parser: "@typescript-eslint/parser",
     plugins: [
         "prettier",
-        // "@typescript-eslint"
+        "@typescript-eslint"
     ],
-    // rules: {
-    //     "@typescript-eslint/strict-boolean-expressions": [
-    //         2,
-    //         {
-    //             "allowString": false,
-    //             "allowNumber": false
-    //         }
-    //     ]
-    // }
+    rules: {
+        "@typescript-eslint/strict-boolean-expressions": [
+            2,
+            {
+                "allowString": false,
+                "allowNumber": false
+            }
+        ]
+    }
 }

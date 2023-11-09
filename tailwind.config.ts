@@ -12,13 +12,13 @@ export default  <Partial<Config>>{
   theme: {
     screens: {
         // => @media (min-width: {size}px) { ... }
-      xxs: '280px',
+      '2xs': '280px',
       xs: '512px',
       s: '640px',
-      m: '768px',
-      l: '880px',
+      md: '768px',
+      lg: '880px',
       xl: '1024px',
-      xxl: '1280px',
+      '2xl': '1280px',
       '3xl': '1920px',
     }
   }
