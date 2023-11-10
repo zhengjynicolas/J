@@ -4,16 +4,18 @@ module.exports = {
         es2022: true,
         node: true,
     },
+    ignorePatterns: ['**/*.vue'],
+    // parser: "vue-eslint-parser",
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
+        parser: "@typescript-eslint/parser"
     },
     extends: [
         "prettier",
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
     ],
-    parser: "@typescript-eslint/parser",
     plugins: [
         "prettier",
         "@typescript-eslint"

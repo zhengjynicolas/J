@@ -1,16 +1,18 @@
 <template>
   <footer :class="ui.wrapper" v-bind="attrs">
-    <div :class="ui.top">
-      <slot name="top"/>
-    </div>
-    <div :class="ui.bottom.left">
-      <slot name="left"/>
-    </div>
-    <div :class="ui.bottom.center">
-      <slot name="center"/>
-    </div>
-    <div :class="ui.bottom.right">
-      <slot name="right"/>
+    <div :class="ui.container">
+      <div :class="ui.top">
+        <slot name="top"/>
+      </div>
+      <div :class="ui.bottom.left">
+        <slot name="left"/>
+      </div>
+      <div :class="ui.bottom.center">
+        <slot name="center"/>
+      </div>
+      <div :class="ui.bottom.right">
+        <slot name="right"/>
+      </div>
     </div>
   </footer>
 </template>
@@ -20,6 +22,7 @@ import type { Link } from '@nuxt/ui/dist/runtime/types'
 
 const config = {
   wrapper: 'relative',
+  container: 'mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl',
   top: {
     wrapper: '',
     container: 'py-8 lg:py-12'

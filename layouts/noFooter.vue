@@ -1,8 +1,8 @@
 <template>
   <default-header/>
-  <UMain>
+  <main>
     <slot />
-  </UMain>
+  </main>
 </template>
 <script setup lang="ts">
 import DefaultHeader from '~/components/defaultHeader.vue'

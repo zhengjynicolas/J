@@ -23,7 +23,8 @@
                 "label":"Nuxt Seo",
                 "to":"https://nuxtseo.com/",
                 "icon":"i-tabler-seo",
-                "description":"Find how to set SEO by Nuxt Seo"
+                "description":"Find how to set SEO by Nuxt Seo",
+                "target":"_blank"
             },
             {
                 "label":"Nuxt Color Mode",

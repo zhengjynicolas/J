@@ -4,9 +4,7 @@
       <div :class="ui.left">
         <slot name="left">
           <NuxtLink to="/" aria-label="Logo" :class="ui.logo">
-            <slot name="logo">
-              Nuxt UI
-            </slot>
+            <slot name="logo">Nuxt UI</slot>
           </NuxtLink>
         </slot>
       </div>
@@ -25,12 +23,12 @@ import { Dialog, DialogPanel, TransitionRoot } from '@headlessui/vue'
 import type { Link } from '@nuxt/ui/dist/runtime/types'
 
 const config = {
-  wrapper: 'bg-background/75 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50',
-  container: 'flex items-center justify-between gap-3 h-[4rem]',
+  wrapper: 'bg-background backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50',
+  container: 'flex items-center justify-between gap-3 h-[4rem] mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl',
   left: 'lg:flex-1 flex items-center gap-1.5',
   center: 'hidden lg:flex',
   right: 'flex items-center justify-end lg:flex-1 gap-1.5',
-  logo: 'flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white flex items-end gap-1.5',
+  logo: 'flex-shrink-0 font-bold text-xl text-gray-950 dark:text-white flex items-end gap-1.5',
   panel: {
     wrapper: 'fixed inset-0 z-50 overflow-y-auto bg-background lg:hidden',
     header: 'px-4 sm:px-6',
