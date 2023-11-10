@@ -2,20 +2,15 @@
     {
         "label":"Documentation",
         "icon":"i-heroicons-book-open",
-        "to":"/getting-started"
+        "to":"/doc"
     },
     {
-        "label":"Playground",
+        "label":"Demo",
         "icon":"i-simple-icons-stackblitz",
-        "to":"/playground"
+        "to":"/Demo"
     },
     {
-        "label":"Roadmap",
-        "icon":"i-heroicons-academic-cap",
-        "to":"/roadmap"
-    },
-    {
-        "label":"Pro",
+        "label":"MenuLink",
         "icon":"i-heroicons-square-3-stack-3d",
         "to":"/pro",
         "children":[
@@ -36,7 +31,7 @@
             {
                 "label":"Guide",
                 "to":"/pro/guide",
-                "icon":"i-heroicons-book-open",
+                "icon":"i-prime-chevron-circle-right",
                 "description":"Learn how to use Nuxt UI Pro in your app."
             },
             {

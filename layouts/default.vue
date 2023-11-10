@@ -9,7 +9,7 @@
       </template>
       <template #right>
         <UColorModeToggle/>
-        <UButton label="GitHub" icon="i-simple-icons-github" color="gray" variant="ghost" to="https://github.com/zhengjynicolas/J" target="_blank" />
+        <UButton icon="i-simple-icons-github" color="gray" variant="ghost" to="https://github.com/zhengjynicolas/J" target="_blank" />
       </template>
     </UHeader>
     <UMain>

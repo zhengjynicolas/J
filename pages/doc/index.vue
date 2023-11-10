@@ -1,6 +1,6 @@
 
 <template>
-  <div>Doc Page</div>
+  <div>DocPage</div>
 </template>
 <script setup lang="ts">
 </script>

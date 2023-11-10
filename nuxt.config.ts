@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import seo from './seo.cjs'
 
 export default defineNuxtConfig({
     devServer: {
@@ -7,8 +8,29 @@ export default defineNuxtConfig({
     devtools: {
         enabled: process.env.NODE_ENV !== 'production'
     },
+    extends: ['@nuxt/ui-pro'],
+    modules: [
+        '@nuxtjs/stylelint-module',
+        '@nuxtjs/eslint-module',
+        '@nuxtjs/google-fonts',
+        // '@nuxtjs/color-mode',
+        '@nuxtjs/svg-sprite',
+        '@nuxtseo/module',
+        'nuxt-simple-sitemap',
+        'nuxt-simple-robots',
+        '@nuxt/ui',
+        'nuxt-lodash',
+        '@vueuse/nuxt',
+        '@pinia/nuxt'
+    ],
     eslint: {
         lintOnStart: false
+    },
+    stylelint: {
+        lintOnStart: false
+    },
+    ui: {
+        icons: ['mdi', 'simple-icons', 'heroicons']
     },
     googleFonts: {
         families: {
@@ -31,20 +53,7 @@ export default defineNuxtConfig({
     //         autoprefixer: {},
     //     },
     // },
-    extends: ['@nuxt/ui-pro'],
-    modules: [
-        '@nuxtjs/stylelint-module',
-        '@nuxtjs/eslint-module',
-        '@nuxtjs/google-fonts',
-        '@nuxtjs/svg-sprite',
-        '@nuxt/ui',
-        'nuxt-lodash',
-        '@vueuse/nuxt',
-        '@pinia/nuxt'
-    ],
-    stylelint: {
-        lintOnStart: false
-    },
+    site: seo,
     // app: {
     //     head: {
     //         charset: 'utf-8',
