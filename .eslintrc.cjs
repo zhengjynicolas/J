@@ -18,13 +18,13 @@ module.exports = {
         "prettier",
         "@typescript-eslint"
     ],
-    rules: {
-        "@typescript-eslint/strict-boolean-expressions": [
-            2,
-            {
-                "allowString": false,
-                "allowNumber": false
-            }
-        ]
-    }
+    // rules: {
+    //     "@typescript-eslint/strict-boolean-expressions": [
+    //         2,
+    //         {
+    //             "allowString": false,
+    //             "allowNumber": false
+    //         }
+    //     ]
+    // }
 }

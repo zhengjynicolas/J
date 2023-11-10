@@ -8,39 +8,42 @@
                 "label":"Nuxt Docs",
                 "to":"/nuxt_doc",
                 "exactHash":true,
-                "icon":"i-heroicons-beaker",
+                "icon":"i-simple-icons-nuxtdotjs",
                 "description":"Discover all the features of Nuxt"
             },
             {
                 "label":"Nuxt UI Documentation",
                 "to":"https://ui.nuxt.com/getting-started",
                 "exactHash":true,
-                "icon":"i-heroicons-credit-card",
-                "description":"Learn how to use Nuxt UI in your app."
+                "icon":"i-mdi-book-music-outline",
+                "description":"Learn how to use Nuxt UI in your app.",
+                "target":"_blank"
             },
             {
                 "label":"Nuxt Seo",
                 "to":"https://nuxtseo.com/",
-                "icon":"i-prime-chevron-circle-right",
+                "icon":"i-tabler-seo",
                 "description":"Find how to set SEO by Nuxt Seo"
             },
             {
                 "label":"Nuxt Color Mode",
                 "to":"https://color-mode.nuxtjs.org/",
-                "icon":"i-prime-chevron-circle-right",
-                "description":"Dark and Light mode with auto detection made easy with Nuxt"
+                "icon":"i-mdi-color",
+                "description":"Dark and Light mode with auto detection made easy with Nuxt",
+                "target":"_blank"
             },
             {
                 "label":"VueUse",
                 "to":"https://vueuse.org/",
-                "icon":"i-prime-chevron-circle-right",
-                "description":"VueUse is a collection of utility functions based on Composition API."
+                "icon":"i-mdi-alpha-u-box-outline",
+                "description":"VueUse is a collection of utility functions based on Composition API.",
+                "target":"_blank"
             }
         ]
     },
     {
         "label":"Demo",
-        "icon":"i-simple-icons-stackblitz",
+        "icon":"i-mdi-emoticon-excited-outline",
         "to":"/Demo"
     }
 ]

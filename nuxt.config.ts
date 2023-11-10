@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     devtools: {
         enabled: process.env.NODE_ENV !== 'production'
     },
-    extends: ['@nuxt/ui-pro'],
     modules: [
         '@nuxtjs/stylelint-module',
         '@nuxtjs/eslint-module',
@@ -18,6 +17,7 @@ export default defineNuxtConfig({
         '@nuxtseo/module',
         'nuxt-simple-sitemap',
         'nuxt-simple-robots',
+        '@nuxt/content',
         '@nuxt/ui',
         'nuxt-lodash',
         '@vueuse/nuxt',
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         lintOnStart: false
     },
     ui: {
-        icons: ['mdi', 'simple-icons', 'heroicons']
+        icons: ['mdi', 'simple-icons', 'heroicons', 'tabler']
     },
     googleFonts: {
         families: {

@@ -1,8 +1,8 @@
 <template>
   <default-header/>
-  <UMain>
+  <main class="min-h-[100vh]">
     <slot />
-  </UMain>
+  </main>
   <default-footer/>
 </template>
 <script setup lang="ts">
