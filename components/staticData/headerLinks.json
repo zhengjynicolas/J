@@ -2,50 +2,45 @@
     {
         "label":"Documentation",
         "icon":"i-heroicons-book-open",
-        "to":"/doc"
+        "to":"/doc",
+        "children":[
+            {
+                "label":"Nuxt Docs",
+                "to":"/nuxt_doc",
+                "exactHash":true,
+                "icon":"i-heroicons-beaker",
+                "description":"Discover all the features of Nuxt"
+            },
+            {
+                "label":"Nuxt UI Documentation",
+                "to":"https://ui.nuxt.com/getting-started",
+                "exactHash":true,
+                "icon":"i-heroicons-credit-card",
+                "description":"Learn how to use Nuxt UI in your app."
+            },
+            {
+                "label":"Nuxt Seo",
+                "to":"https://nuxtseo.com/",
+                "icon":"i-prime-chevron-circle-right",
+                "description":"Find how to set SEO by Nuxt Seo"
+            },
+            {
+                "label":"Nuxt Color Mode",
+                "to":"https://color-mode.nuxtjs.org/",
+                "icon":"i-prime-chevron-circle-right",
+                "description":"Dark and Light mode with auto detection made easy with Nuxt"
+            },
+            {
+                "label":"VueUse",
+                "to":"https://vueuse.org/",
+                "icon":"i-prime-chevron-circle-right",
+                "description":"VueUse is a collection of utility functions based on Composition API."
+            }
+        ]
     },
     {
         "label":"Demo",
         "icon":"i-simple-icons-stackblitz",
         "to":"/Demo"
-    },
-    {
-        "label":"MenuLink",
-        "icon":"i-heroicons-square-3-stack-3d",
-        "to":"/pro",
-        "children":[
-            {
-                "label":"Features",
-                "to":"/pro#features",
-                "exactHash":true,
-                "icon":"i-heroicons-beaker",
-                "description":"Discover all the features of Nuxt UI Pro."
-            },
-            {
-                "label":"Pricing",
-                "to":"/pro#pricing",
-                "exactHash":true,
-                "icon":"i-heroicons-credit-card",
-                "description":"A simple pricing, for solo developers or teams."
-            },
-            {
-                "label":"Guide",
-                "to":"/pro/guide",
-                "icon":"i-prime-chevron-circle-right",
-                "description":"Learn how to use Nuxt UI Pro in your app."
-            },
-            {
-                "label":"Components",
-                "to":"/pro/components",
-                "icon":"i-heroicons-cube-transparent",
-                "description":"Discover all the components available in Nuxt UI Pro."
-            }
-        ]
-    },
-    {
-        "label":"Releases",
-        "icon":"i-heroicons-rocket-launch",
-        "to":"https://github.com/nuxt/ui/releases",
-        "target":"_blank"
     }
 ]
